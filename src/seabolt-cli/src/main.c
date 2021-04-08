@@ -43,10 +43,13 @@
 #ifdef __APPLE__
 #include <mach/clock.h>
 #include <mach/mach.h>
+#include <Availability.h>
 
+#ifdef __MAC_OS_X_VERSION_MIN_REQUIRED
+#if __MAC_OS_X_VERSION_MIN_REQUIRED < 10153
 #define TIME_UTC 0
 
-void timespec_get(struct timespec *ts, int type)
+int timespec_get(struct timespec *ts, int type)
 {
     UNUSED(type);
     clock_serv_t cclock;
@@ -57,6 +60,8 @@ void timespec_get(struct timespec *ts, int type)
     ts->tv_sec = mts.tv_sec;
     ts->tv_nsec = mts.tv_nsec;
 }
+#endif
+#endif
 #endif
 
 enum Command {
