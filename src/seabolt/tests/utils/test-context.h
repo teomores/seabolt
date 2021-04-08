@@ -26,6 +26,7 @@
 #include <tuple>
 #include "bolt/bolt.h"
 #include "catch.hpp"
+#include <sstream>
 
 using namespace std;
 
