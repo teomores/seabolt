@@ -1,10 +1,9 @@
-# Seabolt
-
+# Seabolt for M1
 Seabolt is the C Connector Library for Neo4j.
 The library supports multiple versions of the Bolt protocol through the new _Connector API_ and will provide a base layer for a number of language drivers.
 
 This repo is forked from the original one, that you can find [here](https://github.com/neo4j-drivers/seabolt).
-The reason behind this is adding support for the M1 chip MacBooks with Big Sur.
+The reason behind this is adding support for the **M1 chip MacBooks with Big Sur**.
 
 ## Prerequisites
 
