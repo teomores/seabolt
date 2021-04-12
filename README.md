@@ -32,5 +32,5 @@ To create distributable packages, invoke `cpack` in `build` directory (after `ma
 Finally move the libseabolt to the standard directory where other tools will search for it:
 ```console
 cd build/dist/lib
-cp libseabolt17.1.dylib /usr/local/lib/libseabolt17.dylib
+cp libseabolt17.dylib /usr/local/lib/libseabolt17.dylib
 ```
