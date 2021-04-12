@@ -23,7 +23,7 @@ or
 ```console
 ./make_release.sh
 ```
-This will compile and deposit project artifacts in the `build/dist` directory.
+This will compile and deposit project artifacts in the `build/dist/lib` directory.
 
 To create distributable packages, invoke `cpack` in `build` directory (after `make_debug.sh` or `make_release.sh` is completed) and all binary package artifacts will be placed in `build/dist-package` directory.
 
@@ -31,6 +31,6 @@ To create distributable packages, invoke `cpack` in `build` directory (after `ma
 ## Move to the right dir
 Finally move the libseabolt to the standard directory where other tools will search for it:
 ```console
-cd build/dist
+cd build/dist/lib
 cp libseabolt17.1.dylib /usr/local/lib/libseabolt17.dylib
 ```
